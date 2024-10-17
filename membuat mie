@@ -1,0 +1,28 @@
+def membuat_mie():
+    print("Selamat datang di program membuat mie!")
+    porsi = int(input("Berapa porsi mie yang ingin Anda buat? "))
+
+    if porsi < 1:
+        print("Jumlah porsi tidak valid. Harap masukkan angka positif.")
+    elif porsi == 1:
+        print("Untuk 1 porsi mie, Anda membutuhkan:")
+        print("- 100 gram mie")
+        print("- 500 ml air")
+        print("- Bumbu sesuai selera")
+    elif porsi == 2:
+        print("Untuk 2 porsi mie, Anda membutuhkan:")
+        print("- 200 gram mie")
+        print("- 1000 ml air")
+        print("- Bumbu sesuai selera")
+    elif porsi == 3:
+        print("Untuk 3 porsi mie, Anda membutuhkan:")
+        print("- 300 gram mie")
+        print("- 1500 ml air")
+        print("- Bumbu sesuai selera")
+    else:
+        print("Untuk lebih dari 3 porsi, Anda bisa menggunakan:")
+        print(f"- {porsi * 100} gram mie")
+        print(f"- {porsi * 500} ml air")
+        print("- Bumbu sesuai selera")
+
+membuat_mie()
